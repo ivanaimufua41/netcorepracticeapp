@@ -1,0 +1,16 @@
+@page
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<h1>This is the dog page</h1>
+<p>I love doggos</p>
+
+<p>@DateTime.Now</p>
+
+<h2>
+  @Configuration["Message"]
+</h2>
+
+<h2>
+  @Configuration["Email"]
+</h2>
